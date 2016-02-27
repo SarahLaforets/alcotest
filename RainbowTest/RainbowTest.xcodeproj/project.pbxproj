@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C18B5AD1C7781FB00D8A725 /* Bar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C18B5AC1C7781FB00D8A725 /* Bar.plist */; };
+		8C30B25D1C46BE1800E747D3 /* Verre+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C30B25A1C46BE1800E747D3 /* Verre+CoreDataProperties.m */; };
+		8C30B25E1C46BE1800E747D3 /* Verre.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C30B25C1C46BE1800E747D3 /* Verre.m */; };
+		8C30B2631C46BE5000E747D3 /* Drink+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C30B2601C46BE5000E747D3 /* Drink+CoreDataProperties.m */; };
+		8C30B2641C46BE5000E747D3 /* Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C30B2621C46BE5000E747D3 /* Drink.m */; };
+		8C30B2691C46BE7000E747D3 /* Event+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C30B2661C46BE7000E747D3 /* Event+CoreDataProperties.m */; };
+		8C30B26A1C46BE7000E747D3 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C30B2681C46BE7000E747D3 /* Event.m */; };
+		8C4345701BF0EB4E00999968 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C43456F1BF0EB4E00999968 /* main.m */; };
+		8C4345731BF0EB4E00999968 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4345721BF0EB4E00999968 /* AppDelegate.m */; };
+		8C4345791BF0EB4E00999968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4345771BF0EB4E00999968 /* Main.storyboard */; };
+		8C43457C1BF0EB4E00999968 /* RainbowTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C43457A1BF0EB4E00999968 /* RainbowTest.xcdatamodeld */; };
+		8C43457E1BF0EB4E00999968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C43457D1BF0EB4E00999968 /* Assets.xcassets */; };
+		8C4345811BF0EB4E00999968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C43457F1BF0EB4E00999968 /* LaunchScreen.storyboard */; };
+		8C43458C1BF0EB4E00999968 /* RainbowTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C43458B1BF0EB4E00999968 /* RainbowTestTests.m */; };
+		8C4345971BF0EB4E00999968 /* RainbowTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4345961BF0EB4E00999968 /* RainbowTestUITests.m */; };
+		8C4345A61BF0EC1300999968 /* BarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4345A51BF0EC1300999968 /* BarTableViewController.m */; };
+		8C4345A91BF0EFA200999968 /* EventTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4345A81BF0EFA200999968 /* EventTableViewController.m */; };
+		8C4345BF1BF16BF100999968 /* Bar+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4345BC1BF16BF100999968 /* Bar+CoreDataProperties.m */; };
+		8C4345C01BF16BF100999968 /* Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4345BE1BF16BF100999968 /* Bar.m */; };
+		8C51775F1C6CE765004D0AFB /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C51775E1C6CE765004D0AFB /* EventTableViewCell.m */; };
+		8C5177621C6CEA9E004D0AFB /* DrinksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5177611C6CEA9E004D0AFB /* DrinksTableViewCell.m */; };
+		8C5177651C6CF2FF004D0AFB /* ProfilTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5177641C6CF2FF004D0AFB /* ProfilTableViewCell.m */; };
+		8C9DABF81BF2206A0035AAD3 /* BarDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DABF71BF2206A0035AAD3 /* BarDetailsViewController.m */; };
+		8CAE33881C551241006345A9 /* Profil+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE33851C551241006345A9 /* Profil+CoreDataProperties.m */; };
+		8CAE33891C551241006345A9 /* Profil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE33871C551241006345A9 /* Profil.m */; };
+		8CAE338E1C551252006345A9 /* Taux+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE338B1C551252006345A9 /* Taux+CoreDataProperties.m */; };
+		8CAE338F1C551252006345A9 /* Taux.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE338D1C551252006345A9 /* Taux.m */; };
+		8CAE33921C551449006345A9 /* EventDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE33911C551449006345A9 /* EventDetailsViewController.m */; };
+		8CD96C631C58FA5800DF611A /* AddDrinksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD96C621C58FA5800DF611A /* AddDrinksViewController.m */; };
+		8CD96C671C5CCF7200DF611A /* CalculViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD96C661C5CCF7200DF611A /* CalculViewController.m */; };
+		8CD96C6A1C5D7C9D00DF611A /* Verres.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CD96C691C5D7C9D00DF611A /* Verres.plist */; };
+		8CD96C6D1C5E58E800DF611A /* ProfilsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD96C6C1C5E58E800DF611A /* ProfilsTableViewController.m */; };
+		8CD96C701C5E590700DF611A /* ProfilDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CD96C6F1C5E590700DF611A /* ProfilDetailsViewController.m */; };
+		8CE45B9A1C64D83900ADA28C /* BarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE45B991C64D83900ADA28C /* BarTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C4345881BF0EB4E00999968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C4345631BF0EB4E00999968 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C43456A1BF0EB4E00999968;
+			remoteInfo = RainbowTest;
+		};
+		8C4345931BF0EB4E00999968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C4345631BF0EB4E00999968 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C43456A1BF0EB4E00999968;
+			remoteInfo = RainbowTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C18B5AC1C7781FB00D8A725 /* Bar.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Bar.plist; sourceTree = "<group>"; };
+		8C30B2591C46BE1800E747D3 /* Verre+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Verre+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8C30B25A1C46BE1800E747D3 /* Verre+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Verre+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8C30B25B1C46BE1800E747D3 /* Verre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Verre.h; sourceTree = "<group>"; };
+		8C30B25C1C46BE1800E747D3 /* Verre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Verre.m; sourceTree = "<group>"; };
+		8C30B25F1C46BE5000E747D3 /* Drink+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Drink+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8C30B2601C46BE5000E747D3 /* Drink+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Drink+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8C30B2611C46BE5000E747D3 /* Drink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drink.h; sourceTree = "<group>"; };
+		8C30B2621C46BE5000E747D3 /* Drink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drink.m; sourceTree = "<group>"; };
+		8C30B2651C46BE7000E747D3 /* Event+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Event+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8C30B2661C46BE7000E747D3 /* Event+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Event+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8C30B2671C46BE7000E747D3 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		8C30B2681C46BE7000E747D3 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		8C43456B1BF0EB4E00999968 /* RainbowTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainbowTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C43456F1BF0EB4E00999968 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C4345711BF0EB4E00999968 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8C4345721BF0EB4E00999968 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8C4345781BF0EB4E00999968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C43457B1BF0EB4E00999968 /* RainbowTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RainbowTest.xcdatamodel; sourceTree = "<group>"; };
+		8C43457D1BF0EB4E00999968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C4345801BF0EB4E00999968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C4345821BF0EB4E00999968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C4345871BF0EB4E00999968 /* RainbowTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainbowTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C43458B1BF0EB4E00999968 /* RainbowTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainbowTestTests.m; sourceTree = "<group>"; };
+		8C43458D1BF0EB4E00999968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C4345921BF0EB4E00999968 /* RainbowTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainbowTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C4345961BF0EB4E00999968 /* RainbowTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainbowTestUITests.m; sourceTree = "<group>"; };
+		8C4345981BF0EB4E00999968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C4345A41BF0EC1300999968 /* BarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarTableViewController.h; sourceTree = "<group>"; };
+		8C4345A51BF0EC1300999968 /* BarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarTableViewController.m; sourceTree = "<group>"; };
+		8C4345A71BF0EFA200999968 /* EventTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewController.h; sourceTree = "<group>"; };
+		8C4345A81BF0EFA200999968 /* EventTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewController.m; sourceTree = "<group>"; };
+		8C4345AA1BF1073A00999968 /* RainbowTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RainbowTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		8C4345BB1BF16BF100999968 /* Bar+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bar+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8C4345BC1BF16BF100999968 /* Bar+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bar+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8C4345BD1BF16BF100999968 /* Bar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bar.h; sourceTree = "<group>"; };
+		8C4345BE1BF16BF100999968 /* Bar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bar.m; sourceTree = "<group>"; };
+		8C51775D1C6CE765004D0AFB /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
+		8C51775E1C6CE765004D0AFB /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
+		8C5177601C6CEA9E004D0AFB /* DrinksTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinksTableViewCell.h; sourceTree = "<group>"; };
+		8C5177611C6CEA9E004D0AFB /* DrinksTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinksTableViewCell.m; sourceTree = "<group>"; };
+		8C5177631C6CF2FF004D0AFB /* ProfilTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilTableViewCell.h; sourceTree = "<group>"; };
+		8C5177641C6CF2FF004D0AFB /* ProfilTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilTableViewCell.m; sourceTree = "<group>"; };
+		8C9DABF61BF2206A0035AAD3 /* BarDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarDetailsViewController.h; sourceTree = "<group>"; };
+		8C9DABF71BF2206A0035AAD3 /* BarDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarDetailsViewController.m; sourceTree = "<group>"; };
+		8CAE33841C551241006345A9 /* Profil+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Profil+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8CAE33851C551241006345A9 /* Profil+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Profil+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8CAE33861C551241006345A9 /* Profil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profil.h; sourceTree = "<group>"; };
+		8CAE33871C551241006345A9 /* Profil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profil.m; sourceTree = "<group>"; };
+		8CAE338A1C551252006345A9 /* Taux+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Taux+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8CAE338B1C551252006345A9 /* Taux+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Taux+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8CAE338C1C551252006345A9 /* Taux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Taux.h; sourceTree = "<group>"; };
+		8CAE338D1C551252006345A9 /* Taux.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Taux.m; sourceTree = "<group>"; };
+		8CAE33901C551449006345A9 /* EventDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailsViewController.h; sourceTree = "<group>"; };
+		8CAE33911C551449006345A9 /* EventDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailsViewController.m; sourceTree = "<group>"; };
+		8CD96C611C58FA5800DF611A /* AddDrinksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDrinksViewController.h; sourceTree = "<group>"; };
+		8CD96C621C58FA5800DF611A /* AddDrinksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDrinksViewController.m; sourceTree = "<group>"; };
+		8CD96C651C5CCF7200DF611A /* CalculViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculViewController.h; sourceTree = "<group>"; };
+		8CD96C661C5CCF7200DF611A /* CalculViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculViewController.m; sourceTree = "<group>"; };
+		8CD96C691C5D7C9D00DF611A /* Verres.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Verres.plist; sourceTree = "<group>"; };
+		8CD96C6B1C5E58E800DF611A /* ProfilsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilsTableViewController.h; sourceTree = "<group>"; };
+		8CD96C6C1C5E58E800DF611A /* ProfilsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilsTableViewController.m; sourceTree = "<group>"; };
+		8CD96C6E1C5E590700DF611A /* ProfilDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilDetailsViewController.h; sourceTree = "<group>"; };
+		8CD96C6F1C5E590700DF611A /* ProfilDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilDetailsViewController.m; sourceTree = "<group>"; };
+		8CE45B981C64D83900ADA28C /* BarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarTableViewCell.h; sourceTree = "<group>"; };
+		8CE45B991C64D83900ADA28C /* BarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C4345681BF0EB4E00999968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C4345841BF0EB4E00999968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C43458F1BF0EB4E00999968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C2B4DE21C446423002A1300 /* Bar */ = {
+			isa = PBXGroup;
+			children = (
+				8C4345A41BF0EC1300999968 /* BarTableViewController.h */,
+				8C4345A51BF0EC1300999968 /* BarTableViewController.m */,
+				8C9DABF61BF2206A0035AAD3 /* BarDetailsViewController.h */,
+				8C9DABF71BF2206A0035AAD3 /* BarDetailsViewController.m */,
+				8CE45B981C64D83900ADA28C /* BarTableViewCell.h */,
+				8CE45B991C64D83900ADA28C /* BarTableViewCell.m */,
+			);
+			name = Bar;
+			sourceTree = "<group>";
+		};
+		8C30B26B1C46BEE900E747D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C43457A1BF0EB4E00999968 /* RainbowTest.xcdatamodeld */,
+				8CAE338A1C551252006345A9 /* Taux+CoreDataProperties.h */,
+				8CAE338B1C551252006345A9 /* Taux+CoreDataProperties.m */,
+				8CAE338C1C551252006345A9 /* Taux.h */,
+				8CAE338D1C551252006345A9 /* Taux.m */,
+				8CAE33841C551241006345A9 /* Profil+CoreDataProperties.h */,
+				8CAE33851C551241006345A9 /* Profil+CoreDataProperties.m */,
+				8CAE33861C551241006345A9 /* Profil.h */,
+				8CAE33871C551241006345A9 /* Profil.m */,
+				8C30B2651C46BE7000E747D3 /* Event+CoreDataProperties.h */,
+				8C30B2661C46BE7000E747D3 /* Event+CoreDataProperties.m */,
+				8C30B2671C46BE7000E747D3 /* Event.h */,
+				8C30B2681C46BE7000E747D3 /* Event.m */,
+				8C30B2591C46BE1800E747D3 /* Verre+CoreDataProperties.h */,
+				8C30B25A1C46BE1800E747D3 /* Verre+CoreDataProperties.m */,
+				8C30B25B1C46BE1800E747D3 /* Verre.h */,
+				8C30B25C1C46BE1800E747D3 /* Verre.m */,
+				8C30B25F1C46BE5000E747D3 /* Drink+CoreDataProperties.h */,
+				8C30B2601C46BE5000E747D3 /* Drink+CoreDataProperties.m */,
+				8C30B2611C46BE5000E747D3 /* Drink.h */,
+				8C30B2621C46BE5000E747D3 /* Drink.m */,
+				8C4345BB1BF16BF100999968 /* Bar+CoreDataProperties.h */,
+				8C4345BC1BF16BF100999968 /* Bar+CoreDataProperties.m */,
+				8C4345BD1BF16BF100999968 /* Bar.h */,
+				8C4345BE1BF16BF100999968 /* Bar.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8C4345621BF0EB4E00999968 = {
+			isa = PBXGroup;
+			children = (
+				8C43456D1BF0EB4E00999968 /* RainbowTest */,
+				8C43458A1BF0EB4E00999968 /* RainbowTestTests */,
+				8C4345951BF0EB4E00999968 /* RainbowTestUITests */,
+				8C43456C1BF0EB4E00999968 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C43456C1BF0EB4E00999968 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C43456B1BF0EB4E00999968 /* RainbowTest.app */,
+				8C4345871BF0EB4E00999968 /* RainbowTestTests.xctest */,
+				8C4345921BF0EB4E00999968 /* RainbowTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C43456D1BF0EB4E00999968 /* RainbowTest */ = {
+			isa = PBXGroup;
+			children = (
+				8C4345711BF0EB4E00999968 /* AppDelegate.h */,
+				8C4345721BF0EB4E00999968 /* AppDelegate.m */,
+				8C4345771BF0EB4E00999968 /* Main.storyboard */,
+				8CD96C691C5D7C9D00DF611A /* Verres.plist */,
+				8C18B5AC1C7781FB00D8A725 /* Bar.plist */,
+				8C30B26B1C46BEE900E747D3 /* Model */,
+				8CD96C711C5E590E00DF611A /* Profil */,
+				8CD96C681C5D370B00DF611A /* Calcul */,
+				8C2B4DE21C446423002A1300 /* Bar */,
+				8CD96C641C58FA7200DF611A /* Event */,
+				8C43457D1BF0EB4E00999968 /* Assets.xcassets */,
+				8C43457F1BF0EB4E00999968 /* LaunchScreen.storyboard */,
+				8C4345821BF0EB4E00999968 /* Info.plist */,
+				8C43456E1BF0EB4E00999968 /* Supporting Files */,
+				8C4345AA1BF1073A00999968 /* RainbowTest-Bridging-Header.h */,
+			);
+			path = RainbowTest;
+			sourceTree = "<group>";
+		};
+		8C43456E1BF0EB4E00999968 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C43456F1BF0EB4E00999968 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C43458A1BF0EB4E00999968 /* RainbowTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C43458B1BF0EB4E00999968 /* RainbowTestTests.m */,
+				8C43458D1BF0EB4E00999968 /* Info.plist */,
+			);
+			path = RainbowTestTests;
+			sourceTree = "<group>";
+		};
+		8C4345951BF0EB4E00999968 /* RainbowTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C4345961BF0EB4E00999968 /* RainbowTestUITests.m */,
+				8C4345981BF0EB4E00999968 /* Info.plist */,
+			);
+			path = RainbowTestUITests;
+			sourceTree = "<group>";
+		};
+		8CD96C641C58FA7200DF611A /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				8C4345A71BF0EFA200999968 /* EventTableViewController.h */,
+				8C4345A81BF0EFA200999968 /* EventTableViewController.m */,
+				8C5177601C6CEA9E004D0AFB /* DrinksTableViewCell.h */,
+				8C5177611C6CEA9E004D0AFB /* DrinksTableViewCell.m */,
+				8C51775D1C6CE765004D0AFB /* EventTableViewCell.h */,
+				8C51775E1C6CE765004D0AFB /* EventTableViewCell.m */,
+				8CAE33901C551449006345A9 /* EventDetailsViewController.h */,
+				8CAE33911C551449006345A9 /* EventDetailsViewController.m */,
+				8CD96C611C58FA5800DF611A /* AddDrinksViewController.h */,
+				8CD96C621C58FA5800DF611A /* AddDrinksViewController.m */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		8CD96C681C5D370B00DF611A /* Calcul */ = {
+			isa = PBXGroup;
+			children = (
+				8CD96C651C5CCF7200DF611A /* CalculViewController.h */,
+				8CD96C661C5CCF7200DF611A /* CalculViewController.m */,
+			);
+			name = Calcul;
+			sourceTree = "<group>";
+		};
+		8CD96C711C5E590E00DF611A /* Profil */ = {
+			isa = PBXGroup;
+			children = (
+				8CD96C6B1C5E58E800DF611A /* ProfilsTableViewController.h */,
+				8CD96C6C1C5E58E800DF611A /* ProfilsTableViewController.m */,
+				8CD96C6E1C5E590700DF611A /* ProfilDetailsViewController.h */,
+				8CD96C6F1C5E590700DF611A /* ProfilDetailsViewController.m */,
+				8C5177631C6CF2FF004D0AFB /* ProfilTableViewCell.h */,
+				8C5177641C6CF2FF004D0AFB /* ProfilTableViewCell.m */,
+			);
+			name = Profil;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C43456A1BF0EB4E00999968 /* RainbowTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C43459B1BF0EB4E00999968 /* Build configuration list for PBXNativeTarget "RainbowTest" */;
+			buildPhases = (
+				8C4345671BF0EB4E00999968 /* Sources */,
+				8C4345681BF0EB4E00999968 /* Frameworks */,
+				8C4345691BF0EB4E00999968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RainbowTest;
+			productName = RainbowTest;
+			productReference = 8C43456B1BF0EB4E00999968 /* RainbowTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C4345861BF0EB4E00999968 /* RainbowTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C43459E1BF0EB4E00999968 /* Build configuration list for PBXNativeTarget "RainbowTestTests" */;
+			buildPhases = (
+				8C4345831BF0EB4E00999968 /* Sources */,
+				8C4345841BF0EB4E00999968 /* Frameworks */,
+				8C4345851BF0EB4E00999968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C4345891BF0EB4E00999968 /* PBXTargetDependency */,
+			);
+			name = RainbowTestTests;
+			productName = RainbowTestTests;
+			productReference = 8C4345871BF0EB4E00999968 /* RainbowTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C4345911BF0EB4E00999968 /* RainbowTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C4345A11BF0EB4E00999968 /* Build configuration list for PBXNativeTarget "RainbowTestUITests" */;
+			buildPhases = (
+				8C43458E1BF0EB4E00999968 /* Sources */,
+				8C43458F1BF0EB4E00999968 /* Frameworks */,
+				8C4345901BF0EB4E00999968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C4345941BF0EB4E00999968 /* PBXTargetDependency */,
+			);
+			name = RainbowTestUITests;
+			productName = RainbowTestUITests;
+			productReference = 8C4345921BF0EB4E00999968 /* RainbowTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C4345631BF0EB4E00999968 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Sarah LAFORETS";
+				TargetAttributes = {
+					8C43456A1BF0EB4E00999968 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					8C4345861BF0EB4E00999968 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 8C43456A1BF0EB4E00999968;
+					};
+					8C4345911BF0EB4E00999968 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 8C43456A1BF0EB4E00999968;
+					};
+				};
+			};
+			buildConfigurationList = 8C4345661BF0EB4E00999968 /* Build configuration list for PBXProject "RainbowTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C4345621BF0EB4E00999968;
+			productRefGroup = 8C43456C1BF0EB4E00999968 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C43456A1BF0EB4E00999968 /* RainbowTest */,
+				8C4345861BF0EB4E00999968 /* RainbowTestTests */,
+				8C4345911BF0EB4E00999968 /* RainbowTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C4345691BF0EB4E00999968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C18B5AD1C7781FB00D8A725 /* Bar.plist in Resources */,
+				8C4345811BF0EB4E00999968 /* LaunchScreen.storyboard in Resources */,
+				8CD96C6A1C5D7C9D00DF611A /* Verres.plist in Resources */,
+				8C43457E1BF0EB4E00999968 /* Assets.xcassets in Resources */,
+				8C4345791BF0EB4E00999968 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C4345851BF0EB4E00999968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C4345901BF0EB4E00999968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C4345671BF0EB4E00999968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4345731BF0EB4E00999968 /* AppDelegate.m in Sources */,
+				8C4345C01BF16BF100999968 /* Bar.m in Sources */,
+				8C4345A91BF0EFA200999968 /* EventTableViewController.m in Sources */,
+				8CD96C631C58FA5800DF611A /* AddDrinksViewController.m in Sources */,
+				8C30B25D1C46BE1800E747D3 /* Verre+CoreDataProperties.m in Sources */,
+				8C43457C1BF0EB4E00999968 /* RainbowTest.xcdatamodeld in Sources */,
+				8CAE338F1C551252006345A9 /* Taux.m in Sources */,
+				8C4345BF1BF16BF100999968 /* Bar+CoreDataProperties.m in Sources */,
+				8C5177621C6CEA9E004D0AFB /* DrinksTableViewCell.m in Sources */,
+				8C5177651C6CF2FF004D0AFB /* ProfilTableViewCell.m in Sources */,
+				8C30B26A1C46BE7000E747D3 /* Event.m in Sources */,
+				8C30B2641C46BE5000E747D3 /* Drink.m in Sources */,
+				8C4345701BF0EB4E00999968 /* main.m in Sources */,
+				8C30B2691C46BE7000E747D3 /* Event+CoreDataProperties.m in Sources */,
+				8C4345A61BF0EC1300999968 /* BarTableViewController.m in Sources */,
+				8CD96C701C5E590700DF611A /* ProfilDetailsViewController.m in Sources */,
+				8C51775F1C6CE765004D0AFB /* EventTableViewCell.m in Sources */,
+				8C30B2631C46BE5000E747D3 /* Drink+CoreDataProperties.m in Sources */,
+				8C30B25E1C46BE1800E747D3 /* Verre.m in Sources */,
+				8CAE33921C551449006345A9 /* EventDetailsViewController.m in Sources */,
+				8C9DABF81BF2206A0035AAD3 /* BarDetailsViewController.m in Sources */,
+				8CAE33881C551241006345A9 /* Profil+CoreDataProperties.m in Sources */,
+				8CAE338E1C551252006345A9 /* Taux+CoreDataProperties.m in Sources */,
+				8CD96C671C5CCF7200DF611A /* CalculViewController.m in Sources */,
+				8CE45B9A1C64D83900ADA28C /* BarTableViewCell.m in Sources */,
+				8CAE33891C551241006345A9 /* Profil.m in Sources */,
+				8CD96C6D1C5E58E800DF611A /* ProfilsTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C4345831BF0EB4E00999968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C43458C1BF0EB4E00999968 /* RainbowTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C43458E1BF0EB4E00999968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4345971BF0EB4E00999968 /* RainbowTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C4345891BF0EB4E00999968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C43456A1BF0EB4E00999968 /* RainbowTest */;
+			targetProxy = 8C4345881BF0EB4E00999968 /* PBXContainerItemProxy */;
+		};
+		8C4345941BF0EB4E00999968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C43456A1BF0EB4E00999968 /* RainbowTest */;
+			targetProxy = 8C4345931BF0EB4E00999968 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C4345771BF0EB4E00999968 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C4345781BF0EB4E00999968 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C43457F1BF0EB4E00999968 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C4345801BF0EB4E00999968 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C4345991BF0EB4E00999968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C43459A1BF0EB4E00999968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C43459C1BF0EB4E00999968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = RainbowTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.laforets.RainbowTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RainbowTest/RainbowTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C43459D1BF0EB4E00999968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = RainbowTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.laforets.RainbowTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RainbowTest/RainbowTest-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		8C43459F1BF0EB4E00999968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RainbowTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.laforets.RainbowTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RainbowTest.app/RainbowTest";
+			};
+			name = Debug;
+		};
+		8C4345A01BF0EB4E00999968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RainbowTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.laforets.RainbowTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RainbowTest.app/RainbowTest";
+			};
+			name = Release;
+		};
+		8C4345A21BF0EB4E00999968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RainbowTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.laforets.RainbowTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RainbowTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8C4345A31BF0EB4E00999968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RainbowTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.laforets.RainbowTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RainbowTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C4345661BF0EB4E00999968 /* Build configuration list for PBXProject "RainbowTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C4345991BF0EB4E00999968 /* Debug */,
+				8C43459A1BF0EB4E00999968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C43459B1BF0EB4E00999968 /* Build configuration list for PBXNativeTarget "RainbowTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C43459C1BF0EB4E00999968 /* Debug */,
+				8C43459D1BF0EB4E00999968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C43459E1BF0EB4E00999968 /* Build configuration list for PBXNativeTarget "RainbowTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C43459F1BF0EB4E00999968 /* Debug */,
+				8C4345A01BF0EB4E00999968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C4345A11BF0EB4E00999968 /* Build configuration list for PBXNativeTarget "RainbowTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C4345A21BF0EB4E00999968 /* Debug */,
+				8C4345A31BF0EB4E00999968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8C43457A1BF0EB4E00999968 /* RainbowTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8C43457B1BF0EB4E00999968 /* RainbowTest.xcdatamodel */,
+			);
+			currentVersion = 8C43457B1BF0EB4E00999968 /* RainbowTest.xcdatamodel */;
+			path = RainbowTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8C4345631BF0EB4E00999968 /* Project object */;
+}

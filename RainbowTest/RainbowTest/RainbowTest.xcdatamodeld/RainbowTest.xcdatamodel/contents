@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="Bar" representedClassName="Bar" syncable="YES">
+        <attribute name="degre" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Drink" representedClassName="Drink" syncable="YES">
+        <attribute name="nombre" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="refBar" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bar" syncable="YES"/>
+        <relationship name="refVerre" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Verre" syncable="YES"/>
+    </entity>
+    <entity name="Event" representedClassName="Event" syncable="YES">
+        <attribute name="begin" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="end" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="refDrink" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Drink" syncable="YES"/>
+    </entity>
+    <entity name="Profil" representedClassName="Profil" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="poids" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sexe" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="Taux" representedClassName="Taux" syncable="YES">
+        <attribute name="moment" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="taux" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="refProfil" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Profil" syncable="YES"/>
+    </entity>
+    <entity name="Verre" representedClassName="Verre" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantite" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Bar" positionX="-65" positionY="-102" width="128" height="75"/>
+        <element name="Drink" positionX="-180" positionY="231" width="128" height="103"/>
+        <element name="Event" positionX="-407" positionY="174" width="128" height="103"/>
+        <element name="Profil" positionX="-200" positionY="12" width="128" height="103"/>
+        <element name="Taux" positionX="-369" positionY="-90" width="128" height="88"/>
+        <element name="Verre" positionX="61" positionY="258" width="128" height="73"/>
+    </elements>
+</model>

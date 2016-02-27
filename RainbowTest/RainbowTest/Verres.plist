@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>quantite</key>
+		<integer>9</integer>
+		<key>name</key>
+		<string>Verre à Cocktail</string>
+	</dict>
+	<dict>
+		<key>quantite</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>Shooter</string>
+	</dict>
+	<dict>
+		<key>quantite</key>
+		<real>12.5</real>
+		<key>name</key>
+		<string>Flute</string>
+	</dict>
+	<dict>
+		<key>quantite</key>
+		<integer>3</integer>
+		<key>name</key>
+		<string>Shooter</string>
+	</dict>
+	<dict>
+		<key>quantite</key>
+		<integer>7</integer>
+		<key>name</key>
+		<string>Verre à Cocktail</string>
+	</dict>
+	<dict>
+		<key>quantite</key>
+		<integer>20</integer>
+		<key>name</key>
+		<string>Tumbler</string>
+	</dict>
+	<dict>
+		<key>quantite</key>
+		<integer>2</integer>
+		<key>name</key>
+		<string>Verre à Shot</string>
+	</dict>
+	<dict>
+		<key>quantite</key>
+		<integer>140</integer>
+		<key>name</key>
+		<string>Yard glass</string>
+	</dict>
+	<dict>
+		<key>quantite</key>
+		<integer>100</integer>
+		<key>name</key>
+		<string>Masse</string>
+	</dict>
+	<dict>
+		<key>quantite</key>
+		<real>47.6</real>
+		<key>name</key>
+		<string>Chopine</string>
+	</dict>
+	<dict>
+		<key>quantite</key>
+		<integer>50</integer>
+		<key>name</key>
+		<string>Pinte</string>
+	</dict>
+	<dict>
+		<key>quantite</key>
+		<integer>25</integer>
+		<key>name</key>
+		<string>Demi</string>
+	</dict>
+	<dict>
+		<key>quantite</key>
+		<integer>14</integer>
+		<key>name</key>
+		<string>Ballon de Rouge</string>
+	</dict>
+	<dict>
+		<key>quantite</key>
+		<integer>8</integer>
+		<key>name</key>
+		<string>Ballon de blanc</string>
+	</dict>
+	<dict>
+		<key>quantite</key>
+		<integer>12</integer>
+		<key>name</key>
+		<string>Canon</string>
+	</dict>
+</array>
+</plist>
