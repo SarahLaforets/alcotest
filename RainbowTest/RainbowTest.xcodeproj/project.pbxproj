@@ -29,6 +29,9 @@
 		8C51775F1C6CE765004D0AFB /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C51775E1C6CE765004D0AFB /* EventTableViewCell.m */; };
 		8C5177621C6CEA9E004D0AFB /* DrinksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5177611C6CEA9E004D0AFB /* DrinksTableViewCell.m */; };
 		8C5177651C6CF2FF004D0AFB /* ProfilTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5177641C6CF2FF004D0AFB /* ProfilTableViewCell.m */; };
+		8C5EEE9C1C85F1C9004B3CA0 /* GestionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5EEE9B1C85F1C9004B3CA0 /* GestionTableViewController.m */; };
+		8C5EEE9F1C85F1F5004B3CA0 /* GestionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5EEE9E1C85F1F5004B3CA0 /* GestionTableViewCell.m */; };
+		8C5EEEA11C85FAD1004B3CA0 /* DrinkDirections.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C5EEEA01C85FAD1004B3CA0 /* DrinkDirections.plist */; };
 		8C9DABF81BF2206A0035AAD3 /* BarDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DABF71BF2206A0035AAD3 /* BarDetailsViewController.m */; };
 		8CAE33881C551241006345A9 /* Profil+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE33851C551241006345A9 /* Profil+CoreDataProperties.m */; };
 		8CAE33891C551241006345A9 /* Profil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE33871C551241006345A9 /* Profil.m */; };
@@ -104,6 +107,11 @@
 		8C5177611C6CEA9E004D0AFB /* DrinksTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinksTableViewCell.m; sourceTree = "<group>"; };
 		8C5177631C6CF2FF004D0AFB /* ProfilTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilTableViewCell.h; sourceTree = "<group>"; };
 		8C5177641C6CF2FF004D0AFB /* ProfilTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilTableViewCell.m; sourceTree = "<group>"; };
+		8C5EEE9A1C85F1C9004B3CA0 /* GestionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestionTableViewController.h; sourceTree = "<group>"; };
+		8C5EEE9B1C85F1C9004B3CA0 /* GestionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestionTableViewController.m; sourceTree = "<group>"; };
+		8C5EEE9D1C85F1F5004B3CA0 /* GestionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestionTableViewCell.h; sourceTree = "<group>"; };
+		8C5EEE9E1C85F1F5004B3CA0 /* GestionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestionTableViewCell.m; sourceTree = "<group>"; };
+		8C5EEEA01C85FAD1004B3CA0 /* DrinkDirections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DrinkDirections.plist; sourceTree = "<group>"; };
 		8C9DABF61BF2206A0035AAD3 /* BarDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarDetailsViewController.h; sourceTree = "<group>"; };
 		8C9DABF71BF2206A0035AAD3 /* BarDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarDetailsViewController.m; sourceTree = "<group>"; };
 		8CAE33841C551241006345A9 /* Profil+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Profil+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -223,14 +231,15 @@
 			isa = PBXGroup;
 			children = (
 				8C4345711BF0EB4E00999968 /* AppDelegate.h */,
+				8C5EEEA01C85FAD1004B3CA0 /* DrinkDirections.plist */,
 				8C4345721BF0EB4E00999968 /* AppDelegate.m */,
 				8C4345771BF0EB4E00999968 /* Main.storyboard */,
 				8CD96C691C5D7C9D00DF611A /* Verres.plist */,
 				8C18B5AC1C7781FB00D8A725 /* Bar.plist */,
+				8C5EEE971C85F181004B3CA0 /* Gestion */,
 				8C30B26B1C46BEE900E747D3 /* Model */,
 				8CD96C711C5E590E00DF611A /* Profil */,
 				8CD96C681C5D370B00DF611A /* Calcul */,
-				8C2B4DE21C446423002A1300 /* Bar */,
 				8CD96C641C58FA7200DF611A /* Event */,
 				8C43457D1BF0EB4E00999968 /* Assets.xcassets */,
 				8C43457F1BF0EB4E00999968 /* LaunchScreen.storyboard */,
@@ -265,6 +274,34 @@
 				8C4345981BF0EB4E00999968 /* Info.plist */,
 			);
 			path = RainbowTestUITests;
+			sourceTree = "<group>";
+		};
+		8C5EEE971C85F181004B3CA0 /* Gestion */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B4DE21C446423002A1300 /* Bar */,
+				8C5EEE991C85F197004B3CA0 /* Cocktails */,
+				8C5EEE981C85F18A004B3CA0 /* Verres */,
+				8C5EEE9A1C85F1C9004B3CA0 /* GestionTableViewController.h */,
+				8C5EEE9B1C85F1C9004B3CA0 /* GestionTableViewController.m */,
+				8C5EEE9D1C85F1F5004B3CA0 /* GestionTableViewCell.h */,
+				8C5EEE9E1C85F1F5004B3CA0 /* GestionTableViewCell.m */,
+			);
+			name = Gestion;
+			sourceTree = "<group>";
+		};
+		8C5EEE981C85F18A004B3CA0 /* Verres */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Verres;
+			sourceTree = "<group>";
+		};
+		8C5EEE991C85F197004B3CA0 /* Cocktails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cocktails;
 			sourceTree = "<group>";
 		};
 		8CD96C641C58FA7200DF611A /* Event */ = {
@@ -410,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C18B5AD1C7781FB00D8A725 /* Bar.plist in Resources */,
+				8C5EEEA11C85FAD1004B3CA0 /* DrinkDirections.plist in Resources */,
 				8C4345811BF0EB4E00999968 /* LaunchScreen.storyboard in Resources */,
 				8CD96C6A1C5D7C9D00DF611A /* Verres.plist in Resources */,
 				8C43457E1BF0EB4E00999968 /* Assets.xcassets in Resources */,
@@ -446,9 +484,11 @@
 				8C43457C1BF0EB4E00999968 /* RainbowTest.xcdatamodeld in Sources */,
 				8CAE338F1C551252006345A9 /* Taux.m in Sources */,
 				8C4345BF1BF16BF100999968 /* Bar+CoreDataProperties.m in Sources */,
+				8C5EEE9F1C85F1F5004B3CA0 /* GestionTableViewCell.m in Sources */,
 				8C5177621C6CEA9E004D0AFB /* DrinksTableViewCell.m in Sources */,
 				8C5177651C6CF2FF004D0AFB /* ProfilTableViewCell.m in Sources */,
 				8C30B26A1C46BE7000E747D3 /* Event.m in Sources */,
+				8C5EEE9C1C85F1C9004B3CA0 /* GestionTableViewController.m in Sources */,
 				8C30B2641C46BE5000E747D3 /* Drink.m in Sources */,
 				8C4345701BF0EB4E00999968 /* main.m in Sources */,
 				8C30B2691C46BE7000E747D3 /* Event+CoreDataProperties.m in Sources */,
