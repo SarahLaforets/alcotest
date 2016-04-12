@@ -67,14 +67,28 @@
     UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
     BarTableViewController *barTableViewController = (BarTableViewController *)[mainStoryBoard instantiateViewControllerWithIdentifier:@"BarTableViewController"];
+    VerreTableViewController *verreTableViewController = (VerreTableViewController *)[mainStoryBoard instantiateViewControllerWithIdentifier:@"VerreTableViewController"];
     
     if (indexPath.row == 0) {
         [[self navigationController] pushViewController:barTableViewController animated:true];
-    } /*else if (indexPath.row == 1) {
-        cell.imageView.image = [UIImage imageNamed:@"Cocktail_50.png"];
+    } else if (indexPath.row == 1) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Sorry"
+                                                                       message:@"This part is not done yet."
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action){
+                                                                  //Do Some action here
+                                                                  
+                                                              }];
+        
+        [alert addAction:defaultAction];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+
     } else if (indexPath.row == 2) {
-        cell.imageView.image = [UIImage imageNamed:@"Wine_Glass_50.png"];
-    }*/
+        [[self navigationController] pushViewController:verreTableViewController animated:true];
+    }
 }
 
 

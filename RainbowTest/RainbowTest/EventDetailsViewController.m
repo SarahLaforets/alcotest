@@ -160,7 +160,6 @@
         }
         if (_myBoolTest == false) {
             _theEvent = (Event*) event;
-            _myBoolTest = true;
         }
         [[self navigationController] popViewControllerAnimated:true];
     }
@@ -186,14 +185,30 @@
     }
 }
 - (IBAction)addDrink:(id)sender {
-    UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    AddDrinksViewController *addDrinksViewController = (AddDrinksViewController *)[mainStoryBoard instantiateViewControllerWithIdentifier:@"AddDrinksViewController"];
-    addDrinksViewController.delegate = self;
-    addDrinksViewController.event = _theEvent;
-    addDrinksViewController.testEdit = false;
-    
-    [[self navigationController] pushViewController:addDrinksViewController animated:true];
+    if (_myBoolTest == false) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error"
+                                                                       message:@"You must save the event before add any drink"
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                              handler:^(UIAlertAction * action){
+                                                                  //Do Some action here
+                                                                  
+                                                              }];
+        
+        [alert addAction:defaultAction];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+    } else {
+        UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        AddDrinksViewController *addDrinksViewController = (AddDrinksViewController *)[mainStoryBoard instantiateViewControllerWithIdentifier:@"AddDrinksViewController"];
+        addDrinksViewController.delegate = self;
+        addDrinksViewController.event = _theEvent;
+        addDrinksViewController.testEdit = false;
+        
+        [[self navigationController] pushViewController:addDrinksViewController animated:true];
+    }
 }
 
 #pragma mark - Table view data source

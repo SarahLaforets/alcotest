@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="azw-Il-899">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="azw-Il-899">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -47,7 +47,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Nz-JY-kfD">
                                             <rect key="frame" x="88" y="0.0" width="504" height="72.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -148,22 +148,64 @@
             </objects>
             <point key="canvasLocation" x="2423" y="-615"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Verre Table View Controller-->
         <scene sceneID="FnD-yK-3aA">
             <objects>
-                <tableViewController id="u0S-aQ-rzX" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZNg-qj-KdV">
+                <tableViewController storyboardIdentifier="VerreTableViewController" id="u0S-aQ-rzX" customClass="VerreTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZNg-qj-KdV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nFn-70-rvx">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="verreCell" rowHeight="84" id="nFn-70-rvx" customClass="VerreTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="84"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nFn-70-rvx" id="7p2-sN-FvE">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="83.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wine_Glass_100" translatesAutoresizingMaskIntoConstraints="NO" id="kNs-xo-G3j">
+                                            <rect key="frame" x="8" y="0.0" width="75" height="75.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="75" id="qHL-WO-Odn"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nom verre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYG-go-hjm">
+                                            <rect key="frame" x="91" y="0.0" width="501" height="38"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="38" id="eyn-Kq-Ff9"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="quantité" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkC-NM-63v">
+                                            <rect key="frame" x="91" y="54" width="501" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="pCb-de-zEj"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="kNs-xo-G3j" firstAttribute="bottom" secondItem="7p2-sN-FvE" secondAttribute="bottomMargin" id="9gk-V5-5YZ"/>
+                                        <constraint firstItem="lYG-go-hjm" firstAttribute="leading" secondItem="kNs-xo-G3j" secondAttribute="trailing" constant="8" id="Cl8-2a-C8C"/>
+                                        <constraint firstItem="QkC-NM-63v" firstAttribute="leading" secondItem="kNs-xo-G3j" secondAttribute="trailing" constant="8" id="TYv-3r-FNF"/>
+                                        <constraint firstItem="lYG-go-hjm" firstAttribute="top" secondItem="7p2-sN-FvE" secondAttribute="topMargin" constant="-8" id="YoD-R6-aa0"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="QkC-NM-63v" secondAttribute="bottom" constant="0.5" id="aKK-P7-VJy"/>
+                                        <constraint firstItem="kNs-xo-G3j" firstAttribute="top" secondItem="7p2-sN-FvE" secondAttribute="topMargin" constant="-8" id="bbL-5E-X4r"/>
+                                        <constraint firstItem="lYG-go-hjm" firstAttribute="trailing" secondItem="7p2-sN-FvE" secondAttribute="trailingMargin" id="g0h-wB-QsQ"/>
+                                        <constraint firstItem="QkC-NM-63v" firstAttribute="trailing" secondItem="7p2-sN-FvE" secondAttribute="trailingMargin" id="z3t-DT-Le7"/>
+                                        <constraint firstItem="kNs-xo-G3j" firstAttribute="leading" secondItem="7p2-sN-FvE" secondAttribute="leadingMargin" id="zEg-sn-yOf"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameVerre" destination="lYG-go-hjm" id="ZE8-OY-6ZB"/>
+                                    <outlet property="quantite" destination="QkC-NM-63v" id="puO-oX-mM4"/>
+                                    <segue destination="Otn-IM-24b" kind="show" identifier="upDateVerre" id="txB-a8-K6a"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -175,6 +217,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSl-Sr-4Zc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2423" y="78"/>
+        </scene>
+        <!--Verre Details View Controller-->
+        <scene sceneID="pIl-cg-Pye">
+            <objects>
+                <viewController id="Otn-IM-24b" customClass="VerreDetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DEO-de-qvM"/>
+                        <viewControllerLayoutGuide type="bottom" id="f5X-Gw-wEM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gxh-5a-dGI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjp-gf-u7l">
+                                <rect key="frame" x="24" y="123" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantitee :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ST6-gm-qxI">
+                                <rect key="frame" x="24" y="213" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hy7-e7-Ky1">
+                                <rect key="frame" x="87" y="119" width="493" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantitee cL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4kj-Ig-4p4">
+                                <rect key="frame" x="116" y="209" width="464" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tfNameVerre" destination="hy7-e7-Ky1" id="G6Y-Qo-HaJ"/>
+                        <outlet property="tfQuantiteeVerre" destination="4kj-Ig-4p4" id="af5-Hl-q9H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8l-JV-XKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3125" y="78"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="4vN-wC-EHL">
@@ -1097,6 +1185,7 @@
         <image name="Saliva_25" width="25" height="25"/>
         <image name="User_25" width="25" height="25"/>
         <image name="Wine_100" width="100" height="100"/>
+        <image name="Wine_Glass_100" width="104" height="104"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="BEg-NO-f1x"/>

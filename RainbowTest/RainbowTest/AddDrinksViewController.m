@@ -36,7 +36,7 @@
         _tfVerre.text = [[_drink refVerre] name];
     }
     // Do any additional setup after loading the view.
-    if ([[self fetchVerre] count] == 0) {
+    if ([[[Verre sharedInstance] fetchVerre] count] == 0) {
         NSString *path = [[NSBundle mainBundle] pathForResource:@"Verres" ofType:@"plist"];
         //NSDictionary * = [NSDictionary dictionaryWithContentsOfFile:path];
         NSArray *allBar = [NSArray arrayWithContentsOfFile:path];
@@ -44,7 +44,8 @@
         for (NSDictionary *theBar in allBar) {
             NSString *name = theBar[@"name"];
             NSNumber  *quantite = [NSNumber numberWithInteger:[theBar[@"quantite"] integerValue]];
-            [self addVerre:name withQuantity:quantite];
+            //[self addVerre:name withQuantity:quantite];
+            [_verreDB addVerre:name withQuantity:quantite];
             id++;
         }
     }
@@ -130,9 +131,9 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent: (NSInteger)component {
    
     if (pickerView.tag == 20) {
-        return [[self fetchBoisson] count];
+        return [[[Bar sharedInstance] fetchBoisson] count];
     } else if (pickerView.tag == 10) {
-        return [[self fetchVerre] count];
+        return [[[Verre sharedInstance] fetchVerre] count];
     } else {
         return 0;
     }
@@ -142,9 +143,9 @@
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row   forComponent:(NSInteger)component {
     if (pickerView.tag == 20) {
-        return [[[self fetchBoisson] objectAtIndex:row] name];
+        return [[[[Bar sharedInstance] fetchBoisson] objectAtIndex:row] name];
     } else if (pickerView.tag == 10) {
-        return [NSString stringWithFormat:@"%@ %@ cL", [[[self fetchVerre] objectAtIndex:row] name], [[[self fetchVerre] objectAtIndex:row] quantite]];
+        return [NSString stringWithFormat:@"%@ %@ cL", [[[[Verre sharedInstance] fetchVerre] objectAtIndex:row] name], [[[[Verre sharedInstance] fetchVerre] objectAtIndex:row] quantite]];
     } else {
         return @"null";
     }
@@ -152,62 +153,17 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row   inComponent:(NSInteger)component {
     if (pickerView.tag == 20) {
-        _tfBoisson.text = [[[self fetchBoisson] objectAtIndex:row] name];
-        _myBar = (Bar *) [[self fetchBoisson] objectAtIndex:row];
+        _tfBoisson.text = [[[[Bar sharedInstance] fetchBoisson] objectAtIndex:row] name];
+        _myBar = (Bar *) [[[Bar sharedInstance] fetchBoisson] objectAtIndex:row];
     } else if (pickerView.tag == 10) {
-        _tfVerre.text = [[[self fetchVerre] objectAtIndex:row] name];
-        _myVerre = (Verre *) [[self fetchVerre] objectAtIndex:row];
+        _tfVerre.text = [[[[Verre sharedInstance] fetchVerre] objectAtIndex:row] name];
+        _myVerre = (Verre *) [[[Verre sharedInstance] fetchVerre] objectAtIndex:row];
     }
 }
 
 #pragma mark - Core Data
 
-- (NSArray *)fetchBoisson {
-    NSArray *boissons;
-    
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext* context = appDelegate.managedObjectContext;
-    
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Bar" inManagedObjectContext:context];
-    
-    [request setEntity:entityDescription];
-    NSError *error = nil;
-    boissons = [context executeFetchRequest:request error:&error];
-    
-    return boissons;
-}
 
-- (NSArray *)fetchVerre {
-    NSArray *verres;
-    
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext* context = appDelegate.managedObjectContext;
-    
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Verre" inManagedObjectContext:context];
-    
-    [request setEntity:entityDescription];
-    NSError *error = nil;
-    verres = [context executeFetchRequest:request error:&error];
-    
-    return verres;
-}
-
-- (void)addVerre:(NSString *)name withQuantity:(NSNumber*)quantity {
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext* context = appDelegate.managedObjectContext;
-    
-    NSManagedObject *verre = [NSEntityDescription insertNewObjectForEntityForName:@"Verre" inManagedObjectContext:context];
-    
-    [verre setValue:name forKey:@"name"];
-    [verre setValue:quantity forKey:@"quantite"];
-    
-    NSError *error = nil;
-    if(![context save:&error]) {
-        NSLog(@"Problème lors de la sauvegarde : %@", [error localizedDescription]);
-    }
-}
 
 #pragma mark - Actions
 

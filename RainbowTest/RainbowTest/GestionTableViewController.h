@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GestionTableViewCell.h"
 #import "BarTableViewController.h"
+#import "VerreTableViewController.h"
 
 @interface GestionTableViewController : UITableViewController
 

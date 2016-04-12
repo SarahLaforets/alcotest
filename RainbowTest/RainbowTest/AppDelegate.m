@@ -17,7 +17,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    if ([[[Bar sharedInstance] fetchAllBar] count] == 0) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"Bar" ofType:@"plist"];
+        //NSDictionary * = [NSDictionary dictionaryWithContentsOfFile:path];
+        NSArray *allBar = [NSArray arrayWithContentsOfFile:path];
+        int id = 0;
+        for (NSDictionary *theBar in allBar) {
+            NSString *name = theBar[@"name"];
+            NSString *degre = theBar[@"degre"];
+            [[Bar sharedInstance] addBarInDataBase:name withDegre:degre];
+            id++;
+        }
+    }
+    if ([[[Verre sharedInstance] fetchVerre] count] == 0) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"Verres" ofType:@"plist"];
+        //NSDictionary * = [NSDictionary dictionaryWithContentsOfFile:path];
+        NSArray *allBar = [NSArray arrayWithContentsOfFile:path];
+        int id = 0;
+        for (NSDictionary *theBar in allBar) {
+            NSString *name = theBar[@"name"];
+            NSNumber  *quantite = [NSNumber numberWithInteger:[theBar[@"quantite"] integerValue]];
+            
+            [[Verre sharedInstance] addVerre:name withQuantity:quantite];
+            
+            id++;
+        }
+    }
     return YES;
 }
 

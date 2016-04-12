@@ -37,6 +37,8 @@
 @property (strong, nonatomic) Drink *drink;
 @property (assign) BOOL testEdit;
 @property  NSInteger *row;
+@property (nonatomic,strong) Verre *verreDB;
+@property (nonatomic,strong) Bar *barDB;
 
 @property (nonatomic, weak) id <AddDrinksViewControllerDelegate> delegate;
 

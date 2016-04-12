@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C1070A81C8DC5EB002A0D78 /* VerreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1070A71C8DC5EB002A0D78 /* VerreTableViewController.m */; };
+		8C1070AB1C8DC692002A0D78 /* VerreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1070AA1C8DC692002A0D78 /* VerreTableViewCell.m */; };
+		8C1070AE1C8DC6A4002A0D78 /* VerreDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1070AD1C8DC6A4002A0D78 /* VerreDetailsViewController.m */; };
 		8C18B5AD1C7781FB00D8A725 /* Bar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C18B5AC1C7781FB00D8A725 /* Bar.plist */; };
 		8C30B25D1C46BE1800E747D3 /* Verre+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C30B25A1C46BE1800E747D3 /* Verre+CoreDataProperties.m */; };
 		8C30B25E1C46BE1800E747D3 /* Verre.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C30B25C1C46BE1800E747D3 /* Verre.m */; };
@@ -64,6 +67,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C1070A61C8DC5EB002A0D78 /* VerreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerreTableViewController.h; sourceTree = "<group>"; };
+		8C1070A71C8DC5EB002A0D78 /* VerreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerreTableViewController.m; sourceTree = "<group>"; };
+		8C1070A91C8DC692002A0D78 /* VerreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerreTableViewCell.h; sourceTree = "<group>"; };
+		8C1070AA1C8DC692002A0D78 /* VerreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerreTableViewCell.m; sourceTree = "<group>"; };
+		8C1070AC1C8DC6A4002A0D78 /* VerreDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerreDetailsViewController.h; sourceTree = "<group>"; };
+		8C1070AD1C8DC6A4002A0D78 /* VerreDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerreDetailsViewController.m; sourceTree = "<group>"; };
 		8C18B5AC1C7781FB00D8A725 /* Bar.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Bar.plist; sourceTree = "<group>"; };
 		8C30B2591C46BE1800E747D3 /* Verre+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Verre+CoreDataProperties.h"; sourceTree = "<group>"; };
 		8C30B25A1C46BE1800E747D3 /* Verre+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Verre+CoreDataProperties.m"; sourceTree = "<group>"; };
@@ -293,6 +302,12 @@
 		8C5EEE981C85F18A004B3CA0 /* Verres */ = {
 			isa = PBXGroup;
 			children = (
+				8C1070A61C8DC5EB002A0D78 /* VerreTableViewController.h */,
+				8C1070A71C8DC5EB002A0D78 /* VerreTableViewController.m */,
+				8C1070A91C8DC692002A0D78 /* VerreTableViewCell.h */,
+				8C1070AA1C8DC692002A0D78 /* VerreTableViewCell.m */,
+				8C1070AC1C8DC6A4002A0D78 /* VerreDetailsViewController.h */,
+				8C1070AD1C8DC6A4002A0D78 /* VerreDetailsViewController.m */,
 			);
 			name = Verres;
 			sourceTree = "<group>";
@@ -476,12 +491,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1070AE1C8DC6A4002A0D78 /* VerreDetailsViewController.m in Sources */,
 				8C4345731BF0EB4E00999968 /* AppDelegate.m in Sources */,
 				8C4345C01BF16BF100999968 /* Bar.m in Sources */,
 				8C4345A91BF0EFA200999968 /* EventTableViewController.m in Sources */,
 				8CD96C631C58FA5800DF611A /* AddDrinksViewController.m in Sources */,
 				8C30B25D1C46BE1800E747D3 /* Verre+CoreDataProperties.m in Sources */,
 				8C43457C1BF0EB4E00999968 /* RainbowTest.xcdatamodeld in Sources */,
+				8C1070A81C8DC5EB002A0D78 /* VerreTableViewController.m in Sources */,
 				8CAE338F1C551252006345A9 /* Taux.m in Sources */,
 				8C4345BF1BF16BF100999968 /* Bar+CoreDataProperties.m in Sources */,
 				8C5EEE9F1C85F1F5004B3CA0 /* GestionTableViewCell.m in Sources */,
@@ -497,6 +514,7 @@
 				8C51775F1C6CE765004D0AFB /* EventTableViewCell.m in Sources */,
 				8C30B2631C46BE5000E747D3 /* Drink+CoreDataProperties.m in Sources */,
 				8C30B25E1C46BE1800E747D3 /* Verre.m in Sources */,
+				8C1070AB1C8DC692002A0D78 /* VerreTableViewCell.m in Sources */,
 				8CAE33921C551449006345A9 /* EventDetailsViewController.m in Sources */,
 				8C9DABF81BF2206A0035AAD3 /* BarDetailsViewController.m in Sources */,
 				8CAE33881C551241006345A9 /* Profil+CoreDataProperties.m in Sources */,

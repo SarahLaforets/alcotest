@@ -25,24 +25,11 @@
     
     //Lors du premier chargement de l'application
     
-    if ([[self fetchAllBar] count] == 0) {
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"Bar" ofType:@"plist"];
-        //NSDictionary * = [NSDictionary dictionaryWithContentsOfFile:path];
-        NSArray *allBar = [NSArray arrayWithContentsOfFile:path];
-        int id = 0;
-        for (NSDictionary *theBar in allBar) {
-            NSString *name = theBar[@"name"];
-            NSString *degre = theBar[@"degre"];
-            [self addBarInDataBase:name withDegre:degre];
-            id++;
-        }
-    }
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     
-    _bar = [self fetchAllBar];
+    _bar = [[Bar sharedInstance] fetchAllBar];
     [[self tableView] reloadData];
 }
 
@@ -193,33 +180,6 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 
-- (NSArray *)fetchAllBar{
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext* context = appDelegate.managedObjectContext;
-    
-    NSFetchRequest *request = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Bar" inManagedObjectContext:context];
-    
-    [request setEntity:entityDescription];
-    NSError *error = nil;
-    NSArray *mBar = [context executeFetchRequest:request error:&error];
-    return mBar;
-}
 
-- (void)addBarInDataBase:(NSString *)name withDegre:(NSString *)degree {
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext* context = appDelegate.managedObjectContext;
-    
-    NSManagedObject *bar = [NSEntityDescription insertNewObjectForEntityForName:@"Bar" inManagedObjectContext:context];
-    
-    [bar setValue:name forKey:@"name"];
-    NSNumber  *mDegree = [NSNumber numberWithInteger:[degree integerValue]];
-    [bar setValue:mDegree forKey:@"degre"];
-    
-    NSError *error = nil;
-    if(![context save:&error]) {
-        NSLog(@"Problème lors de la sauvegarde : %@", [error localizedDescription]);
-    }
-}
 
 @end
