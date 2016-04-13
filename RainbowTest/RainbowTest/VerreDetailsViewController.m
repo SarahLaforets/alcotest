@@ -28,7 +28,19 @@
 }
 
 - (IBAction)saveVerre:(id)sender {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Sorry"
+                                                                   message:@"This part is not done yet."
+                                                            preferredStyle:UIAlertControllerStyleAlert];
     
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action){
+                                                              //Do Some action here
+                                                              
+                                                          }];
+    
+    [alert addAction:defaultAction];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 /*
